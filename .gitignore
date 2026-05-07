@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Graph generated output
+build/
+generated/
+src/types/
+subgraph.yaml
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/

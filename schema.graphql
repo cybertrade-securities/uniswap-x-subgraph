@@ -1,0 +1,13 @@
+type Fill @entity(immutable: true) {
+  id: ID!
+  orderHash: Bytes!
+  filler: Bytes!
+  swapper: Bytes!
+  nonce: BigInt!
+  reactor: Bytes!
+  reactorName: String!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+  logIndex: BigInt!
+}

@@ -1,0 +1,19 @@
+{
+  "name": "uniswap-x-subgraph",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/cybertrade-securities/uniswap-x-subgraph",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "generate-subgraph": "node scripts/generate-subgraph.js",
+    "prepare-network": "node scripts/generate-subgraph.js",
+    "codegen": "graph codegen --output-dir src/types",
+    "build": "yarn codegen && graph build",
+    "deploy": "node scripts/deploy.js mainnet",
+    "deploy:base": "node scripts/deploy.js base"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.97.1",
+    "@graphprotocol/graph-ts": "^0.38.1"
+  }
+}
